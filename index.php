@@ -70,7 +70,7 @@
 
     <!-- treatments -->
 
-    <div id="treatments" class="h-5 "></div>
+    <div id="treatments" class="h-5"></div>
 
     <div class="treatments w-full h-screen items-center justify-center p-20">
         <div class="items-center justify-center">
@@ -98,7 +98,7 @@
         </div>
     </div>
 
-    <div class="sub-footer w-full h-auto p-20 bg-[#222222] items-center justify-center" id="sub-footer">
+    <!-- <div class="sub-footer w-full h-auto p-20 bg-[#222222] items-center justify-center" id="sub-footer">
         <p class="text-white text-xs mb-5 text-center">Contact us for more information or to book an appointment!
         </p>
 
@@ -121,11 +121,11 @@
             </p>
 
         </div>
-    </div>
+    </div> -->
 
-    <div class="footer h-12 w-full bg-[#1a1a1a] flex items-center justify-center">
+    <!-- <div class="footer h-12 w-full bg-[#1a1a1a] flex items-center justify-center">
         <p class="text-white text-xs">&copy; 2024 D'new era. All rights reserved.</p>
-    </div>
+    </div> -->
 
 
 
