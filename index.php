@@ -39,7 +39,7 @@
 
             <script>
                 document.querySelectorAll('.scroll-link').forEach(link => {
-                    link.addEventListener('click', function(e) {
+                    link.addEventListener('click', function (e) {
                         e.preventDefault();
                         const targetId = this.getAttribute('href').replace('#', '');
                         const target = document.getElementById(targetId);
@@ -72,33 +72,51 @@
 
     <div id="treatments" class="h-5"></div>
 
-    <div class="treatments w-full h-screen items-center justify-center p-20">
+    <div class="treatments w-full h-auto items-center justify-center p-20">
         <div class="items-center justify-center">
-            <h2 class="text-4xl font-bold mb-30">Our Treatments</h2>
+            <h2 class="text-4xl font-bold mb-10">Our Treatments</h2>
         </div>
 
         <div class="grid grid-cols-3 gap-4 max-w-6xl mx-auto items-center justify-center">
-            <div class="treatment-card">
-                <img src="./src/img/treatment1.jpg" alt="Treatment 1" class="w-full h-48 object-cover rounded">
+            <div class="treatment-card shadow-xl h-full max-h-90 p-4">
+                <img src="src\img\swedish-massage.jpg" alt="Treatment 1" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Swedish Massage</h3>
                 <p class="mt-2 text-gray-600">A relaxing full-body massage that uses long strokes to improve circulation
                     and relieve tension.</p>
             </div>
-            <div class="treatment-card">
-                <img src="./src/img/treatment2.jpg" alt="Treatment 2" class="w-full h-48 object-cover rounded">
+            <div class="treatment-card shadow-xl h-full max-h-90 p-4">
+                <img src="src\img\deep-tissue-massage.jpg" alt="Treatment 2" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Deep Tissue Massage</h3>
                 <p class="mt-2 text-gray-600">A deep tissue massage that targets deep muscles and tendons for a
                     therapeutic experience.</p>
             </div>
-            <div class="treatment-card">
-                <img src="./src/img/treatment3.jpg" alt="Treatment 3" class="w-full h-48 object-cover rounded">
-                <h3 class="text-xl font-semibold mt-4">Hot Stone Massage</h3>
+            <div class="treatment-card shadow-xl h-full max-h-90 p-4">
+                <img src="src\img\hot-stone.jpg" alt="Treatment 3" class="w-full h-48 object-cover rounded">
+                <h3 class="text-xl font-semibold mt-4">Hot Stone & Facial Massage</h3>
                 <p class="mt-2 text-gray-600">A massage using heated stones to relax and soothe muscles and joints.</p>
+            </div>
+            <div class="treatment-card shadow-xl h-full max-h-90 p-4 mt-6">
+                <img src="src\img\therapeutic massage.jpg" alt="Treatment 1" class="w-full h-48 object-cover rounded">
+                <h3 class="text-xl font-semibold mt-4">Therapeutic Massage</h3>
+                <p class="mt-2 text-gray-600">Relieve tension, reduce pain, and restore balance to support healing and
+                    relaxation.</p>
+            </div>
+            <div class="treatment-card shadow-xl h-full max-h-90 p-4 mt-6">
+                <img src="src\img\myofascial massag.jpg" alt="Treatment 2" class="w-full h-48 object-cover rounded">
+                <h3 class="text-xl font-semibold mt-4">Myofascial Remodeling</h3>
+                <p class="mt-2 text-gray-600">Release restrictions and improve mobility through focused treatment on
+                    fascia and connective tissues.</p>
+            </div>
+            <div class="treatment-card shadow-xl h-full max-h-90 p-4 mt-6">
+                <img src="src\img\relaxation-cupping.jpg" alt="Treatment 3" class="w-full h-48 object-cover rounded">
+                <h3 class="text-xl font-semibold mt-4">Relaxation Cupping</h3>
+                <p class="mt-2 text-gray-600">Enhance circulation and ease muscle tension using gentle suction for deep
+                    relaxation and recovery.</p>
             </div>
         </div>
     </div>
 
-    <!-- <div class="sub-footer w-full h-auto p-20 bg-[#222222] items-center justify-center" id="sub-footer">
+    <div class="sub-footer w-full h-auto p-20 mt-10 bg-[#222222] items-center justify-center" id="sub-footer">
         <p class="text-white text-xs mb-5 text-center">Contact us for more information or to book an appointment!
         </p>
 
@@ -121,16 +139,15 @@
             </p>
 
         </div>
-    </div> -->
+    </div>
 
-    <!-- <div class="footer h-12 w-full bg-[#1a1a1a] flex items-center justify-center">
+    <div class="footer h-12 w-full bg-[#1a1a1a] flex items-center justify-center">
         <p class="text-white text-xs">&copy; 2024 D'new era. All rights reserved.</p>
-    </div> -->
-
+    </div>
 
 
     <script>
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 10) {
                 navbar.classList.remove('bg-transparent');
