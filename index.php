@@ -14,9 +14,9 @@
     <!-- tailwindcss -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <link href="./output.css" rel="stylesheet">
+    <link href="src\output.css" rel="stylesheet">
 
-    <!-- Font Awesome CDN -->
+    <!-- Font Awesome CDN -->s
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -60,7 +60,8 @@
         <div class="absolute inset-0 bg-white opacity-60"></div>
 
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-            <h1 class="text-6xl font-bold mb-8 leading-tight max-w-3xl mx-auto">Escape to Tropical Serenity with Every
+            <h1 class="text-6xl font-bold mb-8 leading-tight max-w-3xl mx-auto sm:text-clamp-lg">Escape to Tropical Serenity
+                with Every
                 Massage</h1>
             <p class="text-lg mb-6">Your one-stop solution for all your wellness needs</p>
             <button class="px-4 py-2 bg-black text-white text-sm font-medium rounded hover:bg-green-700 transition">Book

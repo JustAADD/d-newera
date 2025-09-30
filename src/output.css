@@ -447,7 +447,32 @@
       }
     }
   }
+
+  /* font clamp style responsive */
+
+  .clamp-sm {
+    font-size: clamp(0.875rem, 0.7778rem + 0.5556vw, 1rem);
+  }
+  .clamp-base {
+    font-size: clamp(1rem, 0.8889rem + 0.8889vw, 1.25rem);
+  }
+  .clamp-lg {
+    font-size: clamp(1.125rem, 1.0556rem + 1.2222vw, 1.5rem);
+  }
+  .clamp-xl {
+    font-size: clamp(1.25rem, 1.2222rem + 1.5556vw, 1.875rem);
+  }
+  .clamp-2xl {
+    font-size: clamp(1.5rem, 1.4444rem + 2.2222vw, 2.25rem);
+  }
+  .clamp-3xl {
+    font-size: clamp(1.875rem, 1.7778rem + 3.3333vw, 3rem);
+  }
+  .clamp-4xl {        
+    font-size: clamp(2.25rem, 2.2222rem + 4.4444vw, 3.75rem);
+  } 
 }
+
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
