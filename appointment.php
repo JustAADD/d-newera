@@ -34,7 +34,7 @@
 
             <script>
                 document.querySelectorAll('.scroll-link').forEach(link => {
-                    link.addEventListener('click', function (e) {
+                    link.addEventListener('click', function(e) {
                         e.preventDefault();
                         const targetId = this.getAttribute('href').replace('#', '');
                         const target = document.getElementById(targetId);
