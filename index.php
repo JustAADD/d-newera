@@ -38,19 +38,19 @@
             </div>
 
             <script>
-            document.querySelectorAll('.scroll-link').forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').replace('#', '');
-                    const target = document.getElementById(targetId);
-                    if (target) {
-                        window.scrollTo({
-                            top: target.offsetTop - 70,
-                            behavior: 'smooth'
-                        });
-                    }
+                document.querySelectorAll('.scroll-link').forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href').replace('#', '');
+                        const target = document.getElementById(targetId);
+                        if (target) {
+                            window.scrollTo({
+                                top: target.offsetTop - 70,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
                 });
-            });
             </script>
         </div>
     </section>
@@ -68,6 +68,7 @@
 
             <p class="text-lg lg:text-2xl md:text-xl sm:text-lg mb-6">Your one-stop solution for all your wellness needs
             </p>
+
             <button
                 class="px-5 py-3 lg:py-4 md:py-5 bg-black text-white text-sm font-medium rounded hover:bg-green-700 transition">Book
                 an appointment now</button>
@@ -77,43 +78,45 @@
     <!-- treatments -->
 
     <div id="treatments" class="h-5"></div>
-
+    <!-- grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 
+     xl:px-30 xl:py-20 lg:px-20 lg:py-20 md:p-20 md:gap-8 w-full h-auto justify-center place-items-center gap-4 -->
     <div class="treatments w-full h-auto items-center justify-center p-20">
-        <div class="items-center justify-center">
-            <h2 class="text-4xl font-bold mb-10">Our Treatments</h2>
+        <div class="items-center text-center justify-center">
+            <h2 class="text-4xl font-bold mb-10">OUR SERVICES AND TREATMENTS</h2>
         </div>
 
-        <div class="grid grid-cols-3 gap-4 max-w-6xl mx-auto items-center justify-center">
-            <div class="treatment-card shadow-xl h-full max-h-90 p-4">
+        <div
+            class="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 max-w-7xl mx-auto items-center justify-center">
+            <div class="treatment-card shadow-xl h-full p-6">
                 <img src="src\img\swedish-massage.jpg" alt="Treatment 1" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Swedish Massage</h3>
                 <p class="mt-2 text-gray-600">A relaxing full-body massage that uses long strokes to improve circulation
                     and relieve tension.</p>
             </div>
-            <div class="treatment-card shadow-xl h-full max-h-90 p-4">
+            <div class="treatment-card shadow-xl h-full max-h-90 p-6">
                 <img src="src\img\deep-tissue-massage.jpg" alt="Treatment 2" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Deep Tissue Massage</h3>
                 <p class="mt-2 text-gray-600">A deep tissue massage that targets deep muscles and tendons for a
                     therapeutic experience.</p>
             </div>
-            <div class="treatment-card shadow-xl h-full max-h-90 p-4">
+            <div class="treatment-card shadow-xl h-full max-h-90 p-6">
                 <img src="src\img\hot-stone.jpg" alt="Treatment 3" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Hot Stone & Facial Massage</h3>
                 <p class="mt-2 text-gray-600">A massage using heated stones to relax and soothe muscles and joints.</p>
             </div>
-            <div class="treatment-card shadow-xl h-full max-h-90 p-4 mt-6">
+            <div class="treatment-card shadow-xl h-full max-h-90 p-6">
                 <img src="src\img\therapeutic massage.jpg" alt="Treatment 1" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Therapeutic Massage</h3>
                 <p class="mt-2 text-gray-600">Relieve tension, reduce pain, and restore balance to support healing and
                     relaxation.</p>
             </div>
-            <div class="treatment-card shadow-xl h-full max-h-90 p-4 mt-6">
+            <div class="treatment-card shadow-xl h-full max-h-90 p-6 ">
                 <img src="src\img\myofascial massag.jpg" alt="Treatment 2" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Myofascial Remodeling</h3>
                 <p class="mt-2 text-gray-600">Release restrictions and improve mobility through focused treatment on
                     fascia and connective tissues.</p>
             </div>
-            <div class="treatment-card shadow-xl h-full max-h-90 p-4 mt-6">
+            <div class="treatment-card shadow-xl h-full max-h-90 p-6">
                 <img src="src\img\relaxation-cupping.jpg" alt="Treatment 3" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Relaxation Cupping</h3>
                 <p class="mt-2 text-gray-600">Enhance circulation and ease muscle tension using gentle suction for deep
@@ -153,16 +156,16 @@
 
 
     <script>
-    window.addEventListener('scroll', function() {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 10) {
-            navbar.classList.remove('bg-transparent');
-            navbar.classList.add('bg-white');
-        } else {
-            navbar.classList.remove('bg-white');
-            navbar.classList.add('bg-transparent');
-        }
-    });
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.remove('bg-transparent');
+                navbar.classList.add('bg-white');
+            } else {
+                navbar.classList.remove('bg-white');
+                navbar.classList.add('bg-transparent');
+            }
+        });
     </script>
 </body>
 
