@@ -8,7 +8,6 @@
 
     <!-- tailwindcss -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
     <link href="./output.css" rel="stylesheet">
 
     <!-- Font Awesome CDN -->
@@ -51,17 +50,37 @@
     </section>
 
     <div class="w-full h-full items-center justify-center">
-        <div class="grid grid-cols-2 items-center justify-center">
-            <div class="">
+        <div class="personal-info max-w-6xl mx-auto px-4 pt-24">
+            <p class="text-3xl font-bold mt-20 mb-2">Personal Information</p>
+            <p class="font-light mb-12">Please fill in the form below to book your appointment.</p>
+        </div>
 
-            </div>
-            <div class="form">
-                <form class="">
-                    <div class="">
+        <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 max-w-6xl mx-auto px-3">
 
-                    </div>
-                </form>
+            <div class="sm:col-span-3">
+                <label for="first-name" class="block text-sm/6 font-medium text-gray-900">First name</label>
+                <div class="mt-2">
+                    <input id="first-name" type="text" name="first-name" autocomplete="given-name"
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+                </div>
             </div>
+
+            <div class="sm:col-span-3">
+                <label for="last-name" class="block text-sm/6 font-medium text-gray-900">Last name</label>
+                <div class="mt-2">
+                    <input id="last-name" type="text" name="last-name" autocomplete="family-name"
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+                </div>
+            </div>
+
+            <div class="sm:col-span-4">
+                <label for="email" class="block text-sm/6 font-medium text-gray-900">Email address</label>
+                <div class="mt-2">
+                    <input id="email" type="email" name="email" autocomplete="email"
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+                </div>
+            </div>
+
         </div>
     </div>
 

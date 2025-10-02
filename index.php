@@ -38,19 +38,19 @@
             </div>
 
             <script>
-                document.querySelectorAll('.scroll-link').forEach(link => {
-                    link.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        const targetId = this.getAttribute('href').replace('#', '');
-                        const target = document.getElementById(targetId);
-                        if (target) {
-                            window.scrollTo({
-                                top: target.offsetTop - 70,
-                                behavior: 'smooth'
-                            });
-                        }
-                    });
+            document.querySelectorAll('.scroll-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').replace('#', '');
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                    }
                 });
+            });
             </script>
         </div>
     </section>
@@ -156,16 +156,16 @@
 
 
     <script>
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 10) {
-                navbar.classList.remove('bg-transparent');
-                navbar.classList.add('bg-white');
-            } else {
-                navbar.classList.remove('bg-white');
-                navbar.classList.add('bg-transparent');
-            }
-        });
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 10) {
+            navbar.classList.remove('bg-transparent');
+            navbar.classList.add('bg-white');
+        } else {
+            navbar.classList.remove('bg-white');
+            navbar.classList.add('bg-transparent');
+        }
+    });
     </script>
 </body>
 
