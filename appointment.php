@@ -7,8 +7,7 @@
     <title>D'new era appointment</title>
 
     <!-- tailwindcss -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="./output.css" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -32,24 +31,24 @@
             </div>
 
             <script>
-            document.querySelectorAll('.scroll-link').forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').replace('#', '');
-                    const target = document.getElementById(targetId);
-                    if (target) {
-                        window.scrollTo({
-                            top: target.offsetTop - 70,
-                            behavior: 'smooth'
-                        });
-                    }
+                document.querySelectorAll('.scroll-link').forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href').replace('#', '');
+                        const target = document.getElementById(targetId);
+                        if (target) {
+                            window.scrollTo({
+                                top: target.offsetTop - 70,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
                 });
-            });
             </script>
         </div>
     </section>
 
-    <div class="w-full h-full items-center justify-center lg:px-20 md:px-10 sm:px-5">
+    <div class="w-full h-full items-center justify-center lg:px-20 md:px-10 sm:px-5 py-10 md:py-5">
         <div class="personal-info max-w-6xl mx-auto px-4 pt-8">
             <p class="text-3xl font-bold mt-20 mb-2">Personal Information</p>
             <p class="font-light mb-12">Please fill in the form below to book your appointment.</p>
@@ -110,8 +109,8 @@
                 <p class="font-medium mb-2 text-gray-900">Payment Method</p>
                 <fieldset>
                     <legend class="block text-sm/6 font-light">Please choose payment option</legend>
-                    <div class="mt-4 space-y-4">
-                        <div class="flex items-center">
+                    <div class="mt-4 space-y-6">
+                        <div class="flex items-center mb-3">
                             <input id="credit-card" name="payment-method" type="radio" value="credit-card"
                                 class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
                             <label for="credit-card" class="ml-3 block text-sm/6 font-medium text-gray-900">Direct
@@ -127,32 +126,36 @@
                 </fieldset>
             </div>
 
-            <div class="flex justify-end mt-5 mb-20 sm:col-span-6 col-start-4">
-                <button
-                    class="px-3 py-3 mr-4 w-32 bg-black text-white text-sm font-medium rounded hover:bg-green-700 transition">Submit</button>
-                <button
-                    class="px-3 py-3 w-32 bg-black text-white text-sm font-medium rounded hover:bg-green-700 transition">Cancel</button>
+            <div class="sm:col-span-6 flex justify-end mb-20">
+                <div class="flex space-x-3 mt-8">
+                    <button
+                        class="px-3 py-3 w-48 mr-4 bg-black text-white text-sm font-medium rounded hover:bg-green-700 transition">Submit</button>
+                    <button
+                        class="px-3 py-3 w-48 bg-black text-white text-sm font-medium rounded hover:bg-green-700 transition">Cancel</button>
+                </div>
             </div>
+
+
         </div>
 
     </div>
 
 
-    <div class="footer h-12 w-full bg-[#202020] flex items-center justify-center">
+    <!-- <div class="footer h-12 w-full bg-[#181818] flex items-center justify-center mt-20">
         <p class="text-white text-xs">&copy; 2024 D'new era. All rights reserved.</p>
-    </div>
+    </div> -->
 
     <script>
-    window.addEventListener('scroll', function() {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 10) {
-            navbar.classList.remove('bg-transparent');
-            navbar.classList.add('bg-white');
-        } else {
-            navbar.classList.remove('bg-white');
-            navbar.classList.add('bg-transparent');
-        }
-    });
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.remove('bg-transparent');
+                navbar.classList.add('bg-white');
+            } else {
+                navbar.classList.remove('bg-white');
+                navbar.classList.add('bg-transparent');
+            }
+        });
     </script>
 
 </body>
