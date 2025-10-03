@@ -31,24 +31,24 @@
             </div>
 
             <script>
-                document.querySelectorAll('.scroll-link').forEach(link => {
-                    link.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        const targetId = this.getAttribute('href').replace('#', '');
-                        const target = document.getElementById(targetId);
-                        if (target) {
-                            window.scrollTo({
-                                top: target.offsetTop - 70,
-                                behavior: 'smooth'
-                            });
-                        }
-                    });
+            document.querySelectorAll('.scroll-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').replace('#', '');
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                    }
                 });
+            });
             </script>
         </div>
     </section>
 
-    <div class="w-full h-full items-center justify-center lg:px-20 md:px-10 sm:px-5 py-10 md:py-5">
+    <div class="w-full h-auto items-center justify-center lg:px-20 md:px-10 sm:px-5 py-20 md:py-10 sm:py-10">
         <div class="personal-info max-w-6xl mx-auto px-4 pt-8">
             <p class="text-3xl font-bold mt-20 mb-2">Personal Information</p>
             <p class="font-light mb-12">Please fill in the form below to book your appointment.</p>
@@ -146,16 +146,16 @@
     </div> -->
 
     <script>
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 10) {
-                navbar.classList.remove('bg-transparent');
-                navbar.classList.add('bg-white');
-            } else {
-                navbar.classList.remove('bg-white');
-                navbar.classList.add('bg-transparent');
-            }
-        });
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 10) {
+            navbar.classList.remove('bg-transparent');
+            navbar.classList.add('bg-white');
+        } else {
+            navbar.classList.remove('bg-white');
+            navbar.classList.add('bg-transparent');
+        }
+    });
     </script>
 
 </body>
