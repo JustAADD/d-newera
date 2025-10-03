@@ -46,6 +46,19 @@
                         }
                     });
                 });
+            document.querySelectorAll('.scroll-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').replace('#', '');
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
             </script>
         </div>
     </section>
@@ -54,6 +67,20 @@
         <div class="grid grid-cols-2 items-center justify-center">
             <div class="">
 
+    <div class="w-full h-auto items-center justify-center lg:px-20 md:px-10 sm:px-5 py-20 md:py-10 sm:py-10">
+        <div class="personal-info max-w-6xl mx-auto px-4 pt-8">
+            <p class="text-3xl font-bold mt-20 mb-2">Personal Information</p>
+            <p class="font-light mb-12">Please fill in the form below to book your appointment.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 max-w-6xl mx-auto px-3">
+
+            <div class="sm:col-span-3">
+                <label for="first-name" class="block text-sm/6 font-medium text-gray-900">First name</label>
+                <div class="mt-2">
+                    <input id="first-name" type="text" name="first-name" autocomplete="given-name"
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+                </div>
             </div>
             <div class="form">
                 <form class="">
@@ -64,6 +91,24 @@
             </div>
         </div>
     </div>
+
+
+    <div class="footer h-12 w-full bg-[#181818] flex items-center justify-center mt-20">
+        <p class="text-white text-xs">&copy; 2024 D'new era. All rights reserved.</p>
+    </div>
+
+    <script>
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 10) {
+            navbar.classList.remove('bg-transparent');
+            navbar.classList.add('bg-white');
+        } else {
+            navbar.classList.remove('bg-white');
+            navbar.classList.add('bg-transparent');
+        }
+    });
+    </script>
 
 </body>
 
