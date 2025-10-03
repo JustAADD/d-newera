@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 
 
+=======
+<?php
+
+
+?>
+
+>>>>>>> 0b8b8ecc1330097dbfa3f6a3bc8cff4fb715724a
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +44,11 @@
 
             <script>
                 document.querySelectorAll('.scroll-link').forEach(link => {
+<<<<<<< HEAD
                     link.addEventListener('click', function (e) {
+=======
+                    link.addEventListener('click', function(e) {
+>>>>>>> 0b8b8ecc1330097dbfa3f6a3bc8cff4fb715724a
                         e.preventDefault();
                         const targetId = this.getAttribute('href').replace('#', '');
                         const target = document.getElementById(targetId);
@@ -56,12 +68,27 @@
         <img src="./src/img/dnewera-bg.png" alt="Logo" class="w-full h-screen object-cover">
         <div class="absolute inset-0 bg-white opacity-60"></div>
 
+<<<<<<< HEAD
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
             <h1 class="text-6xl font-bold mb-8 leading-tight max-w-3xl mx-auto sm:text-clamp-lg">Escape to Tropical Serenity
                 with Every
                 Massage</h1>
             <p class="text-lg mb-6">Your one-stop solution for all your wellness needs</p>
             <button class="px-4 py-2 bg-black text-white text-sm font-medium rounded hover:bg-green-700 transition">Book
+=======
+        <div class="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+
+            <h1 class="text-6xl font-bold mb-8 lg:text-6xl md:text-5xl sm:text-4xl mx-auto lg:max-w-5xl md:max-w-2xl
+                 sm:max-w-lg">
+                Escape to Tropical Serenity with Every Massage
+            </h1>
+
+            <p class="text-lg lg:text-2xl md:text-xl sm:text-lg mb-6">Your one-stop solution for all your wellness needs
+            </p>
+
+            <button
+                class="px-5 py-3 lg:py-4 md:py-5 bg-black text-white text-sm font-medium rounded hover:bg-green-700 transition">Book
+>>>>>>> 0b8b8ecc1330097dbfa3f6a3bc8cff4fb715724a
                 an appointment now</button>
         </div>
     </div>
@@ -69,6 +96,7 @@
     <!-- treatments -->
 
     <div id="treatments" class="h-5"></div>
+<<<<<<< HEAD
 
     <div class="treatments w-full h-auto items-center justify-center p-20">
         <div class="items-center justify-center">
@@ -77,35 +105,67 @@
 
         <div class="grid grid-cols-3 gap-4 max-w-6xl mx-auto items-center justify-center">
             <div class="treatment-card shadow-xl h-full max-h-90 p-4">
+=======
+    <!-- grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 
+     xl:px-30 xl:py-20 lg:px-20 lg:py-20 md:p-20 md:gap-8 w-full h-auto justify-center place-items-center gap-4 -->
+    <div class="treatments w-full h-auto items-center justify-center p-20">
+        <div class="items-center text-center justify-center">
+            <h2 class="text-4xl font-bold mb-10">OUR SERVICES AND TREATMENTS</h2>
+        </div>
+
+        <div
+            class="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 max-w-7xl mx-auto items-center justify-center">
+            <div class="treatment-card shadow-xl h-full p-6">
+>>>>>>> 0b8b8ecc1330097dbfa3f6a3bc8cff4fb715724a
                 <img src="src\img\swedish-massage.jpg" alt="Treatment 1" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Swedish Massage</h3>
                 <p class="mt-2 text-gray-600">A relaxing full-body massage that uses long strokes to improve circulation
                     and relieve tension.</p>
             </div>
+<<<<<<< HEAD
             <div class="treatment-card shadow-xl h-full max-h-90 p-4">
+=======
+            <div class="treatment-card shadow-xl h-full max-h-90 p-6">
+>>>>>>> 0b8b8ecc1330097dbfa3f6a3bc8cff4fb715724a
                 <img src="src\img\deep-tissue-massage.jpg" alt="Treatment 2" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Deep Tissue Massage</h3>
                 <p class="mt-2 text-gray-600">A deep tissue massage that targets deep muscles and tendons for a
                     therapeutic experience.</p>
             </div>
+<<<<<<< HEAD
             <div class="treatment-card shadow-xl h-full max-h-90 p-4">
+=======
+            <div class="treatment-card shadow-xl h-full max-h-90 p-6">
+>>>>>>> 0b8b8ecc1330097dbfa3f6a3bc8cff4fb715724a
                 <img src="src\img\hot-stone.jpg" alt="Treatment 3" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Hot Stone & Facial Massage</h3>
                 <p class="mt-2 text-gray-600">A massage using heated stones to relax and soothe muscles and joints.</p>
             </div>
+<<<<<<< HEAD
             <div class="treatment-card shadow-xl h-full max-h-90 p-4 mt-6">
+=======
+            <div class="treatment-card shadow-xl h-full max-h-90 p-6">
+>>>>>>> 0b8b8ecc1330097dbfa3f6a3bc8cff4fb715724a
                 <img src="src\img\therapeutic massage.jpg" alt="Treatment 1" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Therapeutic Massage</h3>
                 <p class="mt-2 text-gray-600">Relieve tension, reduce pain, and restore balance to support healing and
                     relaxation.</p>
             </div>
+<<<<<<< HEAD
             <div class="treatment-card shadow-xl h-full max-h-90 p-4 mt-6">
+=======
+            <div class="treatment-card shadow-xl h-full max-h-90 p-6 ">
+>>>>>>> 0b8b8ecc1330097dbfa3f6a3bc8cff4fb715724a
                 <img src="src\img\myofascial massag.jpg" alt="Treatment 2" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Myofascial Remodeling</h3>
                 <p class="mt-2 text-gray-600">Release restrictions and improve mobility through focused treatment on
                     fascia and connective tissues.</p>
             </div>
+<<<<<<< HEAD
             <div class="treatment-card shadow-xl h-full max-h-90 p-4 mt-6">
+=======
+            <div class="treatment-card shadow-xl h-full max-h-90 p-6">
+>>>>>>> 0b8b8ecc1330097dbfa3f6a3bc8cff4fb715724a
                 <img src="src\img\relaxation-cupping.jpg" alt="Treatment 3" class="w-full h-48 object-cover rounded">
                 <h3 class="text-xl font-semibold mt-4">Relaxation Cupping</h3>
                 <p class="mt-2 text-gray-600">Enhance circulation and ease muscle tension using gentle suction for deep
@@ -145,7 +205,11 @@
 
 
     <script>
+<<<<<<< HEAD
         window.addEventListener('scroll', function () {
+=======
+        window.addEventListener('scroll', function() {
+>>>>>>> 0b8b8ecc1330097dbfa3f6a3bc8cff4fb715724a
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 10) {
                 navbar.classList.remove('bg-transparent');

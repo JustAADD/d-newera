@@ -7,9 +7,13 @@
     <title>D'new era appointment</title>
 
     <!-- tailwindcss -->
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link href="./output.css" rel="stylesheet">
+=======
+    <link href="src/output.css" rel="stylesheet">
+>>>>>>> 0b8b8ecc1330097dbfa3f6a3bc8cff4fb715724a
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -34,7 +38,11 @@
 
             <script>
                 document.querySelectorAll('.scroll-link').forEach(link => {
+<<<<<<< HEAD
                     link.addEventListener('click', function (e) {
+=======
+                    link.addEventListener('click', function(e) {
+>>>>>>> 0b8b8ecc1330097dbfa3f6a3bc8cff4fb715724a
                         e.preventDefault();
                         const targetId = this.getAttribute('href').replace('#', '');
                         const target = document.getElementById(targetId);
@@ -50,6 +58,7 @@
         </div>
     </section>
 
+<<<<<<< HEAD
     <div class="w-full h-full items-center justify-center">
         <div class="grid grid-cols-2 items-center justify-center">
             <div class="">
@@ -65,6 +74,118 @@
         </div>
     </div>
 
+=======
+    <div class="w-full h-full items-center justify-center lg:px-20 md:px-10 sm:px-5 py-10 md:py-5">
+        <div class="personal-info max-w-6xl mx-auto px-4 pt-8">
+            <p class="text-3xl font-bold mt-20 mb-2">Personal Information</p>
+            <p class="font-light mb-12">Please fill in the form below to book your appointment.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 max-w-6xl mx-auto px-3">
+
+            <div class="sm:col-span-3">
+                <label for="first-name" class="block text-sm/6 font-medium text-gray-900">First name</label>
+                <div class="mt-2">
+                    <input id="first-name" type="text" name="first-name" autocomplete="given-name"
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+                </div>
+            </div>
+
+            <div class="sm:col-span-3">
+                <label for="last-name" class="block text-sm/6 font-medium text-gray-900">Last name</label>
+                <div class="mt-2">
+                    <input id="last-name" type="text" name="last-name" autocomplete="family-name"
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+                </div>
+            </div>
+
+            <div class="sm:col-span-3">
+                <label for="email" class="block text-sm/6 font-medium text-gray-900">Email address</label>
+                <div class="mt-2">
+                    <input id="email" type="email" name="email" autocomplete="email"
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+                </div>
+            </div>
+
+            <div class="sm:col-span-3">
+                <label for="contact" class="block text-sm/6 font-medium text-gray-900">Contact number</label>
+                <div class="mt-2">
+                    <input id="contact" type="contact" name="contact" autocomplete="contact"
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+                </div>
+            </div>
+
+            <div class="sm:col-span-3">
+                <label for="date" class="block text-sm/6 font-medium text-gray-900">Preffered Appointment Date</label>
+                <div class="mt-2">
+                    <input id="date" type="date" name="date" autocomplete="date"
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+                </div>
+            </div>
+
+            <div class="sm:col-span-3">
+                <label for="time" class="block text-sm/6 font-medium text-gray-900">Preffered Appointment
+                    Time</label>
+                <div class="mt-2">
+                    <input id="time" type="time" name="time" autocomplete="time"
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+                </div>
+            </div>
+
+            <div class="sm:col-span-6 col-start-1 shadow-lg rounded-md p-6 bg-white mt-4">
+                <p class="font-medium mb-2 text-gray-900">Payment Method</p>
+                <fieldset>
+                    <legend class="block text-sm/6 font-light">Please choose payment option</legend>
+                    <div class="mt-4 space-y-6">
+                        <div class="flex items-center mb-3">
+                            <input id="credit-card" name="payment-method" type="radio" value="credit-card"
+                                class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                            <label for="credit-card" class="ml-3 block text-sm/6 font-medium text-gray-900">Direct
+                                Billing</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="debit-card" name="payment-method" type="radio" value="debit-card"
+                                class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                            <label for="debit-card" class="ml-3 block text-sm/6 font-medium text-gray-900">Cash
+                                Payment</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="sm:col-span-6 flex justify-end mb-20">
+                <div class="flex space-x-3 mt-8">
+                    <button
+                        class="px-3 py-3 w-48 mr-4 bg-black text-white text-sm font-medium rounded hover:bg-green-700 transition">Submit</button>
+                    <button
+                        class="px-3 py-3 w-48 bg-black text-white text-sm font-medium rounded hover:bg-green-700 transition">Cancel</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- <div class="footer h-12 w-full bg-[#181818] flex items-center justify-center mt-20">
+        <p class="text-white text-xs">&copy; 2024 D'new era. All rights reserved.</p>
+    </div> -->
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.remove('bg-transparent');
+                navbar.classList.add('bg-white');
+            } else {
+                navbar.classList.remove('bg-white');
+                navbar.classList.add('bg-transparent');
+            }
+        });
+    </script>
+
+>>>>>>> 0b8b8ecc1330097dbfa3f6a3bc8cff4fb715724a
 </body>
 
 </html>
