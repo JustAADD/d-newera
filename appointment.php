@@ -141,9 +141,9 @@
     </div>
 
 
-    <!-- <div class="footer h-12 w-full bg-[#181818] flex items-center justify-center mt-20">
+    <div class="footer h-12 w-full bg-[#181818] flex items-center justify-center mt-20">
         <p class="text-white text-xs">&copy; 2024 D'new era. All rights reserved.</p>
-    </div> -->
+    </div>
 
     <script>
     window.addEventListener('scroll', function() {
